@@ -9,14 +9,12 @@ class EventsController < ApplicationController
     @event = Event.find(params[:id])
   end
 
-
   def new
     @event = Event.new
   end
 
-def edit
+  def edit; end
 
-end 
   def create
     @event = current_user.created_events.build(event_params)
     if @event.save
@@ -29,11 +27,11 @@ end
   def destroy
     @event.destroy
     respond_to do |format|
-      format.html { redirect_to events_url, notice: "Event was successfully destroyed." }
+      format.html { redirect_to events_url, notice: 'Event was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
-  
+
   private
 
   def set_event
@@ -44,5 +42,3 @@ end
     params.require(:event).permit(:title, :date, :location, :desc)
   end
 end
-
-
