@@ -1,3 +1,9 @@
 <% @users.each do |user| %>
   <h2><%= user.name %></h2>
+
+  <%= link_to "User's Events", created_events_path %>
+
+  <p>Created events - <%= user.created_events.count %> </p>
+
 <% end %>
+
