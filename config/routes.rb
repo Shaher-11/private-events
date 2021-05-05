@@ -3,7 +3,6 @@ Rails.application.routes.draw do
   resources :events
   root to: 'events#index'
   devise_for :users, :controllers => { registrations: 'registrations' }
-  resources :users, only: [:show, :update, :destroy]
 
   resources :event_users
 
@@ -11,7 +10,5 @@ Rails.application.routes.draw do
     match '/join', to: 'event_users#join', via: :post, on: :collection
   end
   
+  resources :users, only: [:index, :show, :update, :destroy]
 end
-
-
-

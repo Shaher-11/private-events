@@ -1,1 +1,10 @@
-<h1>Heloooo</h1>
+<% @users.each do |user| %>
+  <h2><%= user.name %></h2>
+
+  <p>Created events - <%= user.created_events.each do |created_event| %> </p>
+  <p><%= created_event.title %></p>
+    <%= link_to "User's Events", created_events_path %>
+
+  <% end %>
+<% end %>
+
