@@ -17,4 +17,6 @@
         <h2>Description</h2>
         <p><%= @event.description %></p>
       
-      
+   <% events.each do |event|  %>
+    <h5><%= @event.users %></h5>
+      <% end %>

@@ -9,6 +9,7 @@ class EventsController < ApplicationController
 
   def show
     @event = Event.find(params[:id])
+    @users = @event.users
   end
 
   def new
@@ -32,6 +33,14 @@ class EventsController < ApplicationController
       format.html { redirect_to events_url, notice: 'Event was successfully destroyed.' }
       format.json { head :no_content }
     end
+  end
+
+  def display_coming
+    @coming_events = Event.coming_events
+  end
+
+  def display_prev
+    @prev_events = Event.prev_events
   end
 
   private
