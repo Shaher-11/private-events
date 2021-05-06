@@ -1,5 +1,8 @@
   <h1><%= current_user.name %> All Created events</h1>
-  <h4>Created events - <%= @created_events.count %></h4>
+
+  <% if user_signed_in? %>
+
+    <h4>Created events - <%= @created_events.count %></h4>
     <% @created_events.each do |event| %>
           <h2><%= event.title %></h2>
           <%= display_name(event) %>
@@ -17,3 +20,7 @@
           Created at <%= (event.created_at) %> ago
        
     <% end %>
+
+  <% end %>
+
+  
