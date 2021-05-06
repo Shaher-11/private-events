@@ -33,8 +33,8 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'better_errors', '~> 2.9', '>= 2.9.1'
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
-  gem 'hirb', '~> 0.7.3'
   gem 'database_cleaner'
+  gem 'hirb', '~> 0.7.3'
   gem 'rspec-rails'
 end
 

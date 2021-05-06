@@ -1,5 +1,3 @@
-require 'rails_helper'
-
 RSpec.describe Event, type: :model do
   context 'validation tests' do
     it 'should have a valid title' do
