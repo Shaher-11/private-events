@@ -19,14 +19,24 @@ module ApplicationHelper
       '<h4>Created by Anonymous</h4>'.html_safe
     end
   end
+  def event_goers(users)
+    result = '<p>No attendees yet</p>'
+    unless @users.count.zero?
+      result = ''
+      users.each do |user|
+        result += "<h2>#{user.name}<h2>"
+      end
+    end
+    result.html_safe
+  end
 
   def user_signs(user)
     if signed_in?
       "Logged in as [ #{link_to current_user.name, user_path(current_user)} ]
         #{link_to 'Sign out', destroy_user_session_path, method: :delete}
-      ".html_safe
+      "
     else
-      "#{link_to 'Sign In / Sign up', new_user_registration_path}".html_safe
+      "#{link_to 'Sign In / Sign up', new_user_registration_path}"
     end
   end
 end

@@ -22,3 +22,7 @@
  <% if current_user == @event.creator %>
       <%= link_to 'Delete', event_path, method: :delete, data: { confirm: "Delete this event?"} %>
     <% end %>      
+
+ <h2> All Attendees</h2>
+        <%= event_goers(@users)  %>
+        
