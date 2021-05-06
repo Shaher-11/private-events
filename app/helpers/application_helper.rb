@@ -22,11 +22,11 @@ module ApplicationHelper
 
   def user_signs(user)
     if signed_in?
-      "Logged in as [ #{link_to current_user.name, user_path(current_user)} ]
+      "Signed in as [ #{link_to current_user.name, user_path(current_user)} ]
         #{link_to 'Sign out', destroy_user_session_path, method: :delete}
       ".html_safe
     else
-      "#{link_to 'Sign In / Sign up', new_user_registration_path}".html_safe
+      "#{link_to 'Sign in', new_user_session_path}".html_safe + " " + "#{link_to 'Sign up', new_user_registration_path}".html_safe
     end
   end
 end
