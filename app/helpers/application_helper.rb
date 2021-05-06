@@ -11,8 +11,7 @@ module ApplicationHelper
     if signed_in?
       "<h4>Created by #{event.creator.name}</h4>".html_safe
     else
-      "<h4>Created by Anonymous</h4>".html_safe
+      '<h4>Created by Anonymous</h4>'.html_safe
     end
   end
-
 end
