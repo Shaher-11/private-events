@@ -37,7 +37,9 @@ module ApplicationHelper
       "Signed in as [ #{link_to current_user.name, user_path(current_user)} ]
         #{link_to 'Sign out', destroy_user_session_path, method: :delete}".html_safe
     else
-      "#{link_to 'Sign In / Sign Up', new_user_registration_path}".html_safe
+      "<p'>
+      #{link_to 'Sign In in / Sign up', new_user_registration_path}
+    </p>".html_safe
     end
   end
 end

@@ -2,7 +2,7 @@
 
 # Private Events (Understanding Associations in Rails)
 
-#### In this project, we built a site similar to Eventbrite, allowing users to create events and manage user signups. User can create and attend many events, and events can be attended by many users. 
+#### In this project, we built a site similar to Eventbrite, allowing users to create events and manage user signup. User can create and attend many events, and events can be attended by many users. 
 
 #### The objective of this project was to demonstrate a keen understanding of Rails' modeling principles, applying different relationships, such as many-to-many, while also being conscious about utilization of foreign keys and class names. We also utilized Rails authentication, along with several cool gems, like Devise, better_errors, Hirb, etc.
 
@@ -25,11 +25,13 @@ To get this project up and running locally, you must already have ruby and the n
 
 In order to run the linter on your local machine, please run the following commands on your terminal:
 
-> 1. run `https://github.com/Shaher-11/private-events.git`
-> 2. run `cd private-events`
-> 3. Run bundle install to get the necesary gems.
+> 1. Run `https://github.com/Shaher-11/private-events.git`
+> 2. Run `cd private-events`
+> 3. Run bundle install to get the necessary gems.
 > 4. Run yarn install.
 > 5. Run rails db:migrate.
+> 6. Run rails server 
+> 7. Open localhost:3000 to open the application
 
 ## Author:
 
