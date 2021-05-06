@@ -18,11 +18,7 @@
         <p><%= @event.description %></p>
 
       <%= show_registration(@event) %>
-      
+
  <% if current_user == @event.creator %>
       <%= link_to 'Delete', event_path, method: :delete, data: { confirm: "Delete this event?"} %>
-    <% elsif @event.EventUser.include?(current_user) %>
-     <h1> <%= link_to 'Cancel', event_users_event_path%></h1>
-    <% else %>
-      <%= link_to 'Join', event_users_event_path unless @event.date < Time.now %>
     <% end %>      
