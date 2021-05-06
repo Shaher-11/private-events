@@ -1,65 +1,61 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Private Events (Understanding Associations in Rails)
 
-> One paragraph statement about the project.
+#### In this project, we built a site similar to Eventbrite, allowing users to create events and manage user signups. User can create and attend many events, and events can be attended by many users. 
 
-![screenshot](./app_screenshot.png)
+#### The objective of this project was to demonstrate a keen understanding of Rails' modeling principles, applying different relationships, such as many-to-many, while also being conscious about utilization of foreign keys and class names. We also utilized Rails authentication, along with several cool gems, like Devise, better_errors, Hirb, etc.
 
-Additional description about the project and its features.
 
-## Built With
+## Built with
 
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo
-
-[Live Demo Link](https://livedemo.com)
-
+- Ruby -v 3.0.0
+- Rails -v 6.1.3.1
+- SQLite3
+- VScode
+- Lots of love :heart:
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
 ### Prerequisites
 
-### Setup
+To get this project up and running locally, you must already have ruby and the necessary gems installed on your computer
 
-### Install
+### Installation
 
-### Usage
+In order to run the linter on your local machine, please run the following commands on your terminal:
 
-### Run tests
+> 1. run `https://github.com/Shaher-11/private-events.git`
+> 2. run `cd private-events`
+> 3. Run bundle install to get the necesary gems.
+> 4. Run yarn install.
+> 5. Run rails db:migrate.
 
-### Deployment
+## Author:
 
+👤 **Nikolas Escobal**
 
+[<code><img height="26" src="https://cdn.iconscout.com/icon/free/png-256/github-153-675523.png"></code>](https://github.com/nikoescobal)
+[<code><img height="26" src="https://upload.wikimedia.org/wikipedia/sco/thumb/9/9f/Twitter_bird_logo_2012.svg/1200px-Twitter_bird_logo_2012.svg.png"></code>](https://twitter.com/nikoescobal)
+[<code><img height="26" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Linkedin.svg/1200px-Linkedin.svg.png"></code>](https://www.linkedin.com/in/nikolas-escobal/)
+ <a href="mailto:niko.escobal@gmail.com?subject=Sup Niko?"><img height="26" src="https://cdn.worldvectorlogo.com/logos/official-gmail-icon-2020-.svg"></a>
+ 
 
-## Authors
+ 
+ 👤 **Shaher Shamroukh**
+ 
+[<code><img height="26" src="https://cdn.iconscout.com/icon/free/png-256/github-153-675523.png"></code>](https://github.com/Shaher-11)
+[<code><img height="26" src="https://upload.wikimedia.org/wikipedia/sco/thumb/9/9f/Twitter_bird_logo_2012.svg/1200px-Twitter_bird_logo_2012.svg.png"></code>](https://twitter.com/ShaherShamroukh/)
+[<code><img height="26" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Linkedin.svg/1200px-Linkedin.svg.png"></code>](https://www.linkedin.com/in/shaher-shamroukh/)
+ <a href="mailto:shahershamroukh@gmail.com?subject=Hey Shaher!"><img height="26" src="https://cdn.worldvectorlogo.com/logos/official-gmail-icon-2020-.svg"></a>
+ 
 
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/linkedinhandle)
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome!
+Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](issues/).
+Feel free to check the [issues page](https://github.com/nikoescobal/members-only/issues).
 
 ## Show your support
 
@@ -67,10 +63,10 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Microverse
+- The Odin Project
 
-## 📝 License
+## 📝 MIT License
+
 
 This project is [MIT](lic.url) licensed.
