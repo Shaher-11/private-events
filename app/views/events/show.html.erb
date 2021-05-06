@@ -16,6 +16,8 @@
 
         <h2>Description</h2>
         <p><%= @event.description %></p>
+
+      <%= show_registration(@event) %>
       
  <% if current_user == @event.creator %>
       <%= link_to 'Delete', event_path, method: :delete, data: { confirm: "Delete this event?"} %>

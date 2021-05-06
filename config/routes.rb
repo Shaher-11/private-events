@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   resources :event_users
 
   resources :event_users do
-    match '/join', to: 'event_users#join', via: :post, on: :collection
+    match '/join', to: 'event_user#join', via: :post, on: :collection
   end
   
   resources :users, only: [:index, :show, :update, :destroy]
