@@ -55,7 +55,7 @@ In order to run the linter on your local machine, please run the following comma
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/nikoescobal/members-only/issues).
+Feel free to check the [issues page](https://github.com/Shaher-11/private-events/issues).
 
 ## Show your support
 
