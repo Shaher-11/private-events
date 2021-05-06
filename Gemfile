@@ -34,6 +34,8 @@ group :development, :test do
   gem 'better_errors', '~> 2.9', '>= 2.9.1'
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'hirb', '~> 0.7.3'
+  gem 'database_cleaner'
+  gem 'rspec-rails'
 end
 
 group :development do
