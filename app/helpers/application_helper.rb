@@ -6,6 +6,7 @@ module ApplicationHelper
       (link_to 'Join', join_event_users_path(id: @event.id), method: :post).to_s.html_safe
     end
   end
+
   def create_event_link
     return unless current_user
 
@@ -19,24 +20,24 @@ module ApplicationHelper
       '<h4>Created by Anonymous</h4>'.html_safe
     end
   end
+
   def event_goers(users)
     result = '<p>No attendees yet</p>'
     unless @users.count.zero?
       result = ''
       users.each do |user|
-        result += "<h2>#{user.name}<h2>"
+        result += "<h2>#{user.name}<h2>".html_safe
       end
     end
     result.html_safe
   end
 
-  def user_signs(user)
+  def user_signs(*)
     if signed_in?
       "Signed in as [ #{link_to current_user.name, user_path(current_user)} ]
-        #{link_to 'Sign out', destroy_user_session_path, method: :delete}
-      "
+        #{link_to 'Sign out', destroy_user_session_path, method: :delete}".html_safe
     else
-      "#{link_to 'Sign in', new_user_session_path}".html_safe + " " + "#{link_to 'Sign up', new_user_registration_path}".html_safe
+      "#{link_to 'Sign In / Sign Up', new_user_registration_path}".html_safe
     end
   end
 end

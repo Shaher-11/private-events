@@ -28,11 +28,9 @@ class EventsController < ApplicationController
   end
 
   def destroy
+    @event = Event.find(params[:id])
     @event.destroy
-    respond_to do |format|
-      format.html { redirect_to events_url, notice: 'Event was successfully destroyed.' }
-      format.json { head :no_content }
-    end
+    redirect_to events_path
   end
 
   def display_coming
