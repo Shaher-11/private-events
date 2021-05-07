@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+
+    <p>Event title :</p>
+    <h1><%= @event.title.titleize %></h1>
+
+    <p>Created by :</p>
+    <h5>
+      <%= @event.creator.name %>
+    </h5>
+    <p>Date :</p>
+    <h5><%= @event.date.strftime("%d %b, %Y at %l:%M %p") %></h5> 
+
+ <p>Location :</p>
+    <h5><%= @event.location %></h5>
+
+        <h2>Description</h2>
+        <p><%= @event.description %></p>
+
+      <%= show_registration(@event) %>
+
+ <% if current_user == @event.creator %>
+      <%= link_to 'Delete', event_path, method: :delete, data: { confirm: "Delete this event?"} %>
+    <% end %>      
+
+ <h2> All Attendees</h2>
+        <%= event_goers(@users)  %>
+        

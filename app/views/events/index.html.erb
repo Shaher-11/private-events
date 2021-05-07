@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Events</h1>
+ <h2>Listing All the previous events</h2>
+    <%@prev_events and @prev_events.each do |event| %>
+          <h3><%= event.title %></h3> 
+          <p><%= event.description %></p> <br>
+          <%= link_to 'Show more', event_path(event) %> <br>
+          Created at <%= (event.created_at) %> 
+    <% end %>
+
+
+  <h2>Listing All the coming events</h2>
+    <%@coming_events and @coming_events.each do |event| %>
+          <h3><%= event.title %></h3> 
+          <p><%= event.description %></p> <br>
+          <%= link_to 'Show more', event_path(event)%> <br>
+          Created at <%= (event.created_at) %> 
+    <% end %>
+
+    <br><br>
+
+  <%= link_to 'New Event', new_event_path %>

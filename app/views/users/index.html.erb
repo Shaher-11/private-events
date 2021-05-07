@@ -1,0 +1,7 @@
+    <% @users.each do |user| %>
+          <h2><%= user.name %></h2>
+          <h5><%= user.email %></h5>
+          <p>All Created events - <%= user.created_events.count %> </p>
+          <p>All Joined events - <%= user.event_users.count %> </p>
+    <% end %>
+  

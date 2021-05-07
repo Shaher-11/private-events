@@ -11,6 +11,14 @@
   </head>
 
   <body>
+
+      <i><%= link_to "The Events", events_path %></i>
+    
+          <%= link_to 'The Members', users_path %>
+        
+          <%= create_event_link %>
+         <%= user_signs(current_user) %>
+
     <%= yield %>
   </body>
 </html>

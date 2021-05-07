@@ -1,3 +1,14 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+
+  resources :events, only: [:new, :create, :show, :index, :destroy]
+  root to: 'events#index'
+  devise_for :users, :controllers => { registrations: 'registrations' }
+
+  resources :event_users, only: [:index, :show, :update, :destroy]
+
+  resources :event_users do
+    match '/join', to: 'event_user#join', via: :post, on: :collection
+  end
+  
+  resources :users, only: [:index, :show, :update, :destroy]
 end

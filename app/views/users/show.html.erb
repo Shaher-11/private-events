@@ -1,0 +1,40 @@
+  <h1><%= current_user.name %> All Created events</h1>
+
+  <% if user_signed_in? %>
+    <h4>Created events - <%= @created_events.count %></h4>
+    <% @created_events.each do |event| %>
+          <h2><%= event.title %></h2>
+          <%= display_name(event) %>
+          <p><%= truncate(event.description,length:20) %></p>
+          <%= link_to 'Show more', event_path(event) %>
+          Created at <%= (event.created_at) %> 
+    <% end %>
+  <h4>All Attended events - <%= @events.count %></h4>
+    <% @events.each do |event| %>
+          <h2><%= event.title %></h2>
+          <%= display_name(event) %>
+          <p><%= truncate(event.description,length:20) %></p>
+          <%= link_to 'Show more', event_path(event)%>
+          Created at <%= (event.created_at) %> ago
+    <% end %>
+    
+ <h2>Listing All the previous events</h2>
+    <%@prev_events and @prev_events.each do |event| %>
+          <h3><%= event.title %></h3> 
+          <p><%= event.description %></p> <br>
+          <%= link_to 'Show more', event_path(event) %> <br>
+          Created at <%= (event.created_at) %> 
+    <% end %>
+
+
+  <h2>Listing All the coming events</h2>
+    <%@coming_events and @coming_events.each do |event| %>
+          <h3><%= event.title %></h3> 
+          <p><%= event.description %></p> <br>
+          <%= link_to 'Show more', event_path(event)%> <br>
+          Created at <%= (event.created_at) %> 
+    <% end %>
+
+  <% end %>
+
+  
