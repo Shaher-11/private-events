@@ -12,7 +12,6 @@ RSpec.describe 'Sign up', type: :system do
   describe 'sign_up page' do
     it 'sign up' do
       visit new_user_registration_path
-      sleep(5)
       expect(page).to have_content('Sign up')
     end
   end
