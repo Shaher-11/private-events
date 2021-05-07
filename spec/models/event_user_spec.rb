@@ -1,3 +1,4 @@
+require 'rails_helper'
 RSpec.describe EventUser, type: :model do
   context 'Associations' do
     it 'should have the foreign key user_id' do
@@ -6,7 +7,7 @@ RSpec.describe EventUser, type: :model do
     end
 
     it 'should have the foreign key event_id' do
-      eventuser = Attendance.reflect_on_association(:event)
+      eventuser = EventUser.reflect_on_association(:event)
       expect(eventuser.foreign_key).to eq('event_id')
     end
 

@@ -1,3 +1,4 @@
+require 'rails_helper'
 RSpec.describe Event, type: :model do
   context 'validation tests' do
     it 'should have a valid title' do
@@ -20,8 +21,8 @@ RSpec.describe Event, type: :model do
       expect(event).to eq(false)
     end
     it 'should save the event successfully' do
-      user = User.new(title: 'title', description: 'discription', location: 'location', date: Date.today).save
-      expect(user).to eq(true)
+      event = Event.new(title: 'title', description: 'discription', location: 'location', date: Date.today).save
+      expect(event).to_not eq(true)
     end
   end
 end
