@@ -16,4 +16,3 @@ RSpec.describe 'Listing All the previous events', type: :system do
     end
   end
 end
-

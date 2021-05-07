@@ -1,17 +1,18 @@
 example_id                              | status | run_time        |
 --------------------------------------- | ------ | --------------- |
-./spec/authentication_spec.rb[1:1:1]    | passed | 6.53 seconds    |
-./spec/event_spec.rb[1:1:1]             | passed | 0.20616 seconds |
-./spec/event_spec.rb[1:1:2]             | passed | 0.20851 seconds |
-./spec/event_spec.rb[1:1:3]             | passed | 0.20099 seconds |
-./spec/models/event_spec.rb[1:1:1]      | passed | 0.00083 seconds |
-./spec/models/event_spec.rb[1:1:2]      | passed | 0.00099 seconds |
-./spec/models/event_spec.rb[1:1:3]      | passed | 0.00068 seconds |
-./spec/models/event_spec.rb[1:1:4]      | passed | 0.00124 seconds |
-./spec/models/event_spec.rb[1:1:5]      | passed | 0.00845 seconds |
-./spec/models/event_user_spec.rb[1:1:1] | passed | 0.00098 seconds |
-./spec/models/event_user_spec.rb[1:1:2] | passed | 0.00053 seconds |
-./spec/models/event_user_spec.rb[1:1:3] | passed | 0.0263 seconds  |
-./spec/models/user_spec.rb[1:1:1]       | passed | 0.00933 seconds |
-./spec/models/user_spec.rb[1:1:2]       | passed | 0.00732 seconds |
-./spec/models/user_spec.rb[1:1:3]       | passed | 0.00969 seconds |
+./spec/authentication_spec.rb[1:1:1]    | passed | 1.59 seconds    |
+./spec/authentication_spec.rb[2:1:1]    | passed | 5.26 seconds    |
+./spec/event_spec.rb[1:1:1]             | passed | 0.19564 seconds |
+./spec/event_spec.rb[1:1:2]             | passed | 0.17441 seconds |
+./spec/event_spec.rb[1:1:3]             | passed | 0.20085 seconds |
+./spec/models/event_spec.rb[1:1:1]      | passed | 0.00154 seconds |
+./spec/models/event_spec.rb[1:1:2]      | passed | 0.00119 seconds |
+./spec/models/event_spec.rb[1:1:3]      | passed | 0.01176 seconds |
+./spec/models/event_spec.rb[1:1:4]      | passed | 0.00114 seconds |
+./spec/models/event_spec.rb[1:1:5]      | passed | 0.00107 seconds |
+./spec/models/event_user_spec.rb[1:1:1] | passed | 0.00049 seconds |
+./spec/models/event_user_spec.rb[1:1:2] | passed | 0.00044 seconds |
+./spec/models/event_user_spec.rb[1:1:3] | passed | 0.03583 seconds |
+./spec/models/user_spec.rb[1:1:1]       | passed | 0.00801 seconds |
+./spec/models/user_spec.rb[1:1:2]       | passed | 0.00523 seconds |
+./spec/models/user_spec.rb[1:1:3]       | passed | 0.00625 seconds |
