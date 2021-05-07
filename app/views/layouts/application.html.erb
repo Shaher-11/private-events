@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PrivateEvents</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+      <i><%= link_to "The Events", events_path %></i>
+    
+          <%= link_to 'The Members', users_path %>
+        
+          <%= create_event_link %>
+         <%= user_signs(current_user) %>
+
+    <%= yield %>
+  </body>
+</html>
